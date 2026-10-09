@@ -24,3 +24,8 @@
 2. Copia la carpeta `ZouAthan` en la siguiente ruta de tu decodificador mediante FTP (FileZilla, WinSCP, etc.):
    ```bash
    /usr/lib/enigma2/python/Plugins/Extensions/
+   
+
+wget -qO - https://raw.githubusercontent.com/theking-cs/ZouAthan-/main/install.sh | sh
+
+
