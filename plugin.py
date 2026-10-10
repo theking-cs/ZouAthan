@@ -136,7 +136,7 @@ class AthanManager:
 # ================= PANTALLAS =================
 class ZouSettings(ConfigListScreen, Screen):
     skin = """
-    <screen name="ZouSettings" position="center,center" size="750,380" title="Ajustes ZouAthan PRO">
+    <screen name="ZouSettings" position="center,center" size="750,380" title="Ajustes ZouAthan">
         <widget name="config" position="20,20" size="710,260" scrollbarMode="showOnDemand" />
         <eLabel text="AZUL: Detectar ciudad | OK: Guardar | EXIT: Salir" position="20,320" size="710,30" font="Regular;22" halign="center" foregroundColor="#FACC2E" />
     </screen>"""
@@ -293,6 +293,6 @@ def main(session, **kwargs): session.open(ZouAthan)
 
 def Plugins(**kwargs):
     return [
-        PluginDescriptor(name="ZouAthan PRO", where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main, icon="plugin.png"),
+        PluginDescriptor(name="ZouAthan", where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main, icon="plugin.png"),
         PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, fnc=sessionstart)
     ]
